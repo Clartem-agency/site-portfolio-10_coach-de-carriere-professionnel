@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien Moreau - Coach de Carrière Stratégique | Leadership & Promotion</title>
+    <meta name="description" content="Coaching de carrière stratégique pour cadres et managers ambitieux. Passez de manager performant à leader indispensable avec Julien Moreau, ancien DRH.">
+    <meta name="author" content="Julien Moreau">
+    <meta name="keywords" content="coach carrière, coaching leadership, promotion cadre, manager direction, développement professionnel">
+    <link rel="canonical" href="https://julienmoreau-coaching.com">
+
+    <meta property="og:title" content="Julien Moreau - Coach de Carrière Stratégique | Leadership & Promotion">
+    <meta property="og:description" content="Coaching de carrière stratégique pour cadres et managers ambitieux. Passez de manager performant à leader indispensable.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://julienmoreau-coaching.com">
+    <meta property="og:image" content="https://julienmoreau-coaching.com/og-image.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Julien Moreau - Coach de Carrière Stratégique">
+    <meta name="twitter:description" content="Transformez votre expertise en leadership. Coaching stratégique pour managers ambitieux.">
+    <meta name="twitter:image" content="https://julienmoreau-coaching.com/og-image.jpg">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'background': '#ffffff',
+            'foreground': '#11192c',
+            'card': '#ffffff',
+            'card-foreground': '#11192c',
+            'popover': '#ffffff',
+            'popover-foreground': '#11192c',
+            'primary': '#11192c',
+            'primary-foreground': '#fafafa',
+            'secondary': '#4b5468',
+            'secondary-foreground': '#fafafa',
+            'muted': '#f9fafb',
+            'muted-foreground': '#6b7280',
+            'accent': '#ffc105',
+            'accent-foreground': '#11192c',
+            'destructive': '#ef4444',
+            'destructive-foreground': '#fafafa',
+            'border': '#e5e7eb',
+            'input': '#e5e7eb',
+            'ring': '#ffc105',
+            'hero': '#11192c',
+            'subtitle': '#4b5468',
+          },
+          boxShadow: {
+            'soft': '0 4px 12px rgba(0,0,0,0.08)',
+            'medium': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+            'large': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+            'accent': '0 4px 14px 0 rgba(255, 193, 5, 0.39)',
+          },
+          borderRadius: {
+            'lg': '0.75rem',
+            'xl': '1rem',
+            '2xl': '1.5rem',
+          },
+          transitionProperty: {
+            'smooth': 'all 0.3s ease-in-out',
+          },
+          transitionDuration: {
+            'slow': '500ms',
+          },
+          keyframes: {
+            'accordion-down': {
+              from: { height: '0' },
+              to: { height: 'var(--radix-accordion-content-height)' },
+            },
+            'accordion-up': {
+              from: { height: 'var(--radix-accordion-content-height)' },
+              to: { height: '0' },
+            },
+          },
+          animation: {
+            'accordion-down': 'accordion-down 0.2s ease-out',
+            'accordion-up': 'accordion-up 0.2s ease-out',
+          },
+        },
+      },
+    }
+    </script>
+    
+    <!-- Custom Styles for Gradients and specific behaviors -->
+    <style>
+        .hero-gradient {
+            background-color: #11192c;
+            background-image: radial-gradient(circle at 50% 100%, rgba(255, 193, 5, 0.08), transparent 40%);
+        }
+        .section-premium {
+            background-color: #f9fafb;
+        }
+        .success-gradient {
+            background-image: linear-gradient(to right top, #ffc105, #ffdd80);
+        }
+        .transition-smooth {
+             transition: all 0.3s ease-in-out;
+        }
+        .transition-slow {
+             transition: all 0.5s ease-in-out;
+        }
+        /* Style for scrolled navbar */
+        nav.scrolled {
+            background-color: #11192c;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+    </style>
+
+    <!-- Structured Data for Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Julien Moreau - Coach de Carrière Stratégique",
+      "description": "Coaching de carrière stratégique pour cadres et managers ambitieux",
+      "url": "https://julienmoreau-coaching.com",
+      "telephone": "+33612345678",
+      "email": "contact@julienmoreau-coaching.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Julien Moreau",
+        "jobTitle": "Coach de Carrière Stratégique",
+        "description": "Ancien DRH avec 15+ années d'expérience dans les grands groupes technologiques"
+      },
+      "serviceType": "Career Coaching",
+      "areaServed": "France",
+      "priceRange": "650€-Sur devis"
+    }
+    </script>
+</head>
+<body class="bg-background text-foreground">
+    <div id="root" class="min-h-screen">
+        
+        <!-- =================================================================
+        Navigation Bar
+        ================================================================== -->
+        <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center justify-between h-16">
+                    <div class="font-bold text-xl cursor-pointer transition-smooth">
+                        <span class="text-primary-foreground">Julien Moreau</span>
+                    </div>
+                    <div class="hidden md:flex items-center gap-8">
+                        <a href="#hero" class="transition-smooth hover:text-accent text-primary-foreground/90">Accueil</a>
+                        <a href="#about" class="transition-smooth hover:text-accent text-primary-foreground/90">Mon Parcours</a>
+                        <a href="#services" class="transition-smooth hover:text-accent text-primary-foreground/90">Services</a>
+                        <a href="#methodology" class="transition-smooth hover:text-accent text-primary-foreground/90">Méthodologie</a>
+                        <a href="#contact" class="transition-smooth hover:text-accent text-primary-foreground/90">Contact</a>
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground border border-primary-foreground/30 hover:bg-primary-foreground/10 hover:border-primary-foreground/50 h-9 rounded-md px-3">
+                            Planifier un appel
+                        </a>
+                    </div>
+                    <button class="md:hidden transition-smooth text-primary-foreground">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- =================================================================
+            Hero Section
+            ================================================================== -->
+            <section id="hero" class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+                <div class="container mx-auto px-6 text-center relative z-10">
+                    <div class="max-w-4xl mx-auto">
+                        <h1 class="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">Passez de Manager Performant à Leader Indispensable.</h1>
+                        <p class="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">Coaching de carrière stratégique pour les cadres et managers ambitieux. Je vous donne la feuille de route et l'avantage concurrentiel pour sécuriser le poste de direction que vous visez.</p>
+                        <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                            <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-accent text-accent-foreground hover:bg-accent/90 shadow-accent font-semibold h-11 rounded-md text-lg px-8 py-4">
+                                Planifier mon diagnostic carrière
+                            </a>
+                            <a href="#about" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground border border-primary-foreground/30 hover:bg-primary-foreground/10 hover:border-primary-foreground/50 h-11 rounded-md text-lg px-8 py-4">
+                                Découvrir mon approche
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-primary/5"></div>
+            </section>
+
+            <!-- =================================================================
+            About Section
+            ================================================================== -->
+            <section id="about" class="py-20 bg-background">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 text-hero">Mon Parcours : de DRH à Architecte de votre Carrière</h2>
+                        <div class="grid lg:grid-cols-2 gap-12 items-center mt-16">
+                            <div class="space-y-6">
+                                <p class="text-lg leading-relaxed text-secondary">Pendant plus de 15 ans en tant que Directeur des Ressources Humaines au sein de grands groupes technologiques, j'ai évalué et accompagné des milliers de cadres. J'étais aux premières loges pour observer un schéma récurrent et frustrant : des managers brillants, techniquement irréprochables, dont la carrière stagnait aux portes du comité de direction. Le problème n'était jamais leur compétence, mais leur absence de stratégie.</p>
+                                <p class="text-lg leading-relaxed text-secondary">J'ai réalisé que les "règles du jeu" pour accéder aux postes de leadership ne sont jamais explicitement enseignées. La performance opérationnelle ne suffit plus ; il faut développer une présence exécutive, naviguer la politique d'entreprise avec finesse et construire une marque personnelle forte. Ma mission est née de ce constat : donner aux talents les plus prometteurs les clés que j'ai mis 15 ans à acquérir de l'autre côté de la table.</p>
+                                <p class="text-lg leading-relaxed text-secondary">Aujourd'hui, je ne suis pas un coach qui vous demandera simplement "ce que vous ressentez". Je suis votre partenaire stratégique. Ma double expertise de DRH et de coach certifié me permet de vous offrir une approche unique : un diagnostic précis de vos angles morts, une feuille de route sur-mesure et un entraînement rigoureux pour faire de vous le candidat incontournable pour votre prochaine étape de carrière. Mon engagement : transformer votre potentiel en une promotion concrète.</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="relative">
+                                    <img src="https://placehold.co/448x576/1d232f/fafafa?text=Julien+Moreau" alt="Julien Moreau, Coach de carrière stratégique" class="rounded-2xl shadow-large w-full max-w-md object-cover">
+                                    <div class="absolute -bottom-6 -right-6 w-24 h-24 success-gradient rounded-full opacity-20"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- =================================================================
+            Services Section
+            ================================================================== -->
+            <section id="services" class="py-20 section-premium">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-hero">Mes Accompagnements Stratégiques</h2>
+                            <p class="text-xl text-subtitle max-w-3xl mx-auto">Des programmes sur-mesure conçus pour générer des résultats tangibles et accélérer votre trajectoire professionnelle.</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Service Card 1 -->
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-smooth hover:shadow-medium ring-2 ring-accent shadow-accent">
+                                <div class="flex flex-col space-y-1.5 p-6">
+                                    <h3 class="tracking-tight text-xl font-bold text-hero">Programme "Trajectoire Leader"</h3>
+                                    <p class="text-sm font-medium text-accent">Pour les managers confirmés visant un poste de Direction (Directeur, VP).</p>
+                                    <p class="text-primary mt-4">Un accompagnement intensif sur 3 à 6 mois pour construire et exécuter votre plan de carrière. Nous transformons votre expertise en leadership, votre potentiel en promotion.</p>
+                                </div>
+                                <div class="p-6 pt-0 space-y-6">
+                                    <div class="space-y-3">
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Diagnostic 360° de votre profil de leader</span></div>
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Définition de votre marque personnelle et de votre proposition de valeur unique</span></div>
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Élaboration de votre feuille de route carrière à 2 ans</span></div>
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Coaching sur la communication d'influence et la présence exécutive</span></div>
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Préparation intensive aux entretiens de haut niveau</span></div>
+                                    </div>
+                                    <div class="border-t pt-6">
+                                        <p class="font-semibold text-hero mb-4">Accompagnement sur 3 à 6 mois – Sur devis</p>
+                                        <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full">En savoir plus sur ce programme</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service Card 2 -->
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-smooth hover:shadow-medium">
+                                <div class="flex flex-col space-y-1.5 p-6">
+                                    <h3 class="tracking-tight text-xl font-bold text-hero">Session "Clarté Carrière"</h3>
+                                    <p class="text-sm font-medium text-accent">Pour les professionnels faisant face à un défi ponctuel (négociation, prise de poste, conflit).</p>
+                                    <p class="text-secondary mt-4">Une session "deep dive" de 2 heures pour débloquer une situation complexe, analyser vos options et repartir avec un plan d'action immédiat.</p>
+                                </div>
+                                <div class="p-6 pt-0 space-y-6">
+                                    <div class="space-y-3">
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Analyse de votre problématique en amont</span></div>
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Session de travail intensive de 2h</span></div>
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Synthèse et plan d'action détaillé post-session</span></div>
+                                    </div>
+                                    <div class="border-t pt-6">
+                                        <p class="font-semibold text-hero mb-4">Session unique de 2h – 650€</p>
+                                        <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">Réserver ma session Clarté</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Service Card 3 -->
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-smooth hover:shadow-medium">
+                                <div class="flex flex-col space-y-1.5 p-6">
+                                    <h3 class="tracking-tight text-xl font-bold text-hero">Atelier "Corporate Leadership"</h3>
+                                    <p class="text-sm font-medium text-accent">Pour les entreprises souhaitant accélérer le développement de leurs hauts potentiels.</p>
+                                    <p class="text-secondary mt-4">Un programme sur-mesure pour vos équipes de managers. Nous développons les compétences de leadership qui feront la différence pour la performance de votre entreprise.</p>
+                                </div>
+                                <div class="p-6 pt-0 space-y-6">
+                                    <div class="space-y-3">
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Ateliers collectifs sur mesure (présence exécutive, management stratégique)</span></div>
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Sessions de coaching individuel pour les participants</span></div>
+                                        <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Reporting et suivi avec le management</span></div>
+                                    </div>
+                                    <div class="border-t pt-6">
+                                        <p class="font-semibold text-hero mb-4">Pour équipes de 5 à 10 personnes – Sur devis</p>
+                                        <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">Demander une proposition</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- =================================================================
+            Methodology Section
+            ================================================================== -->
+            <section id="methodology" class="py-20 bg-background">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-hero">Ma Méthodologie : Un Parcours en 4 Étapes vers votre Succès</h2>
+                            <p class="text-xl text-subtitle max-w-3xl mx-auto">Pas d'improvisation. Chaque accompagnement suit un cadre rigoureux, garant de notre efficacité commune.</p>
+                        </div>
+                        <div class="space-y-12">
+                            <!-- Step 1 -->
+                            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                                <div>
+                                    <div class="flex items-center gap-4 mb-6">
+                                        <div class="w-16 h-16 rounded-full hero-gradient flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-primary-foreground"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></div>
+                                        <div class="text-6xl font-bold text-accent">01</div>
+                                    </div>
+                                    <h3 class="text-3xl font-bold mb-4 text-hero">Diagnostic &amp; Alignement</h3>
+                                    <p class="text-lg leading-relaxed text-secondary">Notre collaboration débute par une phase d'écoute approfondie pour comprendre vos ambitions, votre contexte et vos défis. Nous réalisons un diagnostic complet de votre situation pour établir des fondations solides et définir des objectifs mesurables.</p>
+                                </div>
+                                <div class="flex justify-center">
+                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-32 h-32 text-accent/30"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></div>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="grid lg:grid-cols-2 gap-12 items-center lg:grid-flow-dense">
+                                <div class="lg:col-start-2">
+                                    <div class="flex items-center gap-4 mb-6">
+                                        <div class="w-16 h-16 rounded-full hero-gradient flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-primary-foreground"><circle cx="6" cy="19" r="3"></circle><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path><circle cx="18" cy="5" r="3"></circle></svg></div>
+                                        <div class="text-6xl font-bold text-accent">02</div>
+                                    </div>
+                                    <h3 class="text-3xl font-bold mb-4 text-hero">Stratégie &amp; Feuille de Route</h3>
+                                    <p class="text-lg leading-relaxed text-secondary">Sur la base du diagnostic, nous co-construisons votre plan de carrière personnalisé. C'est une feuille de route claire, qui détaille les actions à mener, les compétences à développer et les jalons à atteindre pour sécuriser votre prochain poste.</p>
+                                </div>
+                                <div class="lg:col-start-1 lg:row-start-1 flex justify-center">
+                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-32 h-32 text-accent/30"><circle cx="6" cy="19" r="3"></circle><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path><circle cx="18" cy="5" r="3"></circle></svg></div>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                             <div class="grid lg:grid-cols-2 gap-12 items-center">
+                                <div>
+                                    <div class="flex items-center gap-4 mb-6">
+                                        <div class="w-16 h-16 rounded-full hero-gradient flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-primary-foreground"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div>
+                                        <div class="text-6xl font-bold text-accent">03</div>
+                                    </div>
+                                    <h3 class="text-3xl font-bold mb-4 text-hero">Action &amp; Entraînement</h3>
+                                    <p class="text-lg leading-relaxed text-secondary">C'est la phase de mise en œuvre. À travers nos sessions, nous travaillons activement à l'exécution du plan. Je vous challenge, je vous fournis les outils et nous nous entraînons en conditions réelles (simulations d'entretiens, prises de parole) pour vous préparer au succès.</p>
+                                </div>
+                                <div class="flex justify-center">
+                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-32 h-32 text-accent/30"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div>
+                                </div>
+                            </div>
+                            <!-- Step 4 -->
+                            <div class="grid lg:grid-cols-2 gap-12 items-center lg:grid-flow-dense">
+                                <div class="lg:col-start-2">
+                                    <div class="flex items-center gap-4 mb-6">
+                                        <div class="w-16 h-16 rounded-full hero-gradient flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-primary-foreground"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+                                        <div class="text-6xl font-bold text-accent">04</div>
+                                    </div>
+                                    <h3 class="text-3xl font-bold mb-4 text-hero">Mesure &amp; Ancrage</h3>
+                                    <p class="text-lg leading-relaxed text-secondary">Nous suivons vos progrès par rapport aux objectifs fixés. L'objectif final est de vous rendre totalement autonome, en ancrant durablement les nouvelles compétences et postures qui feront de vous un leader reconnu et respecté.</p>
+                                </div>
+                                <div class="lg:col-start-1 lg:row-start-1 flex justify-center">
+                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-32 h-32 text-accent/30"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- =================================================================
+            Testimonials Section
+            ================================================================== -->
+            <section id="testimonials" class="py-20 section-premium">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-hero">Leurs Résultats, Votre Prochaine Étape</h2>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <!-- Testimonial 1 -->
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm shadow-medium hover:shadow-large transition-slow">
+                                <div class="p-8">
+                                    <div class="flex flex-col h-full">
+                                        <blockquote class="text-lg leading-relaxed text-secondary mb-8 flex-grow">"Avant de travailler avec Julien, j'étais un 'expert technique' coincé dans un rôle de manager senior. Je ne comprenais pas pourquoi ma carrière n'avançait pas malgré mes résultats. L'approche de Julien a été un électrochoc salutaire. Il m'a aidé à décoder la culture de mon entreprise et à transformer ma communication. Résultat : 6 mois plus tard, j'ai été promu Directeur de l'Ingénierie. C'est le meilleur investissement que j'ai fait sur moi-même."</blockquote>
+                                        <div class="flex items-center gap-4 pt-6 border-t">
+                                            <img src="https://placehold.co/64x64/cccccc/333333?text=DL" alt="David L." class="w-16 h-16 rounded-full object-cover shadow-soft">
+                                            <div>
+                                                <p class="font-semibold text-hero">David L.</p>
+                                                <p class="text-sm text-secondary">Directeur de l'Ingénierie, TechSolutions Inc.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial 2 -->
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm shadow-medium hover:shadow-large transition-slow">
+                                <div class="p-8">
+                                    <div class="flex flex-col h-full">
+                                        <blockquote class="text-lg leading-relaxed text-secondary mb-8 flex-grow">"Je préparais une transition vers un poste de direction dans une nouvelle entreprise et le syndrome de l'imposteur me paralysait. Julien m'a fourni une méthode et des outils concrets pour structurer ma pensée, affirmer mon leadership et réussir ma prise de poste. Sa connaissance du monde corporate est un atout inestimable. Je me sens aujourd'hui légitime et parfaitement à ma place."</blockquote>
+                                        <div class="flex items-center gap-4 pt-6 border-t">
+                                            <img src="https://placehold.co/64x64/cccccc/333333?text=SD" alt="Sophie Dubois" class="w-16 h-16 rounded-full object-cover shadow-soft">
+                                            <div>
+                                                <p class="font-semibold text-hero">Sophie Dubois</p>
+                                                <p class="text-sm text-secondary">VP Sales, Innovate Corp.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- =================================================================
+            FAQ Section
+            ================================================================== -->
+            <section id="faq" class="py-20 bg-background">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-hero">Vos Questions, Mes Réponses</h2>
+                        </div>
+                        <div class="space-y-4" data-orientation="vertical">
+                            <!-- FAQ Item 1 -->
+                            <div class="border border-border rounded-lg px-6" data-state="closed">
+                                <h3 class="flex">
+                                    <button type="button" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]>svg]:rotate-180 text-left text-lg font-semibold text-hero hover:no-underline py-6">
+                                        Quelle est la différence entre votre coaching et le travail d'un chasseur de têtes ?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
+                                    </button>
+                                </h3>
+                                <div class="overflow-hidden text-sm transition-all" hidden>
+                                    <div class="pt-0 text-secondary leading-relaxed pb-6">C'est une excellente question. Un chasseur de têtes travaille pour une entreprise afin de pourvoir un poste. Mon seul client, c'est vous. Mon objectif n'est pas de vous trouver un travail, mais de vous donner les stratégies et compétences pour que vous puissiez décrocher LE poste que vous ciblez, aujourd'hui et pour le reste de votre carrière. Je construis votre autonomie et votre valeur sur le marché.</div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item 2 -->
+                            <div class="border border-border rounded-lg px-6" data-state="closed">
+                                <h3 class="flex">
+                                    <button type="button" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]>svg]:rotate-180 text-left text-lg font-semibold text-hero hover:no-underline py-6">
+                                        Comment mesure-t-on le retour sur investissement (ROI) d'un tel accompagnement ?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
+                                    </button>
+                                </h3>
+                                <div class="overflow-hidden text-sm transition-all" hidden>
+                                     <div class="pt-0 text-secondary leading-relaxed pb-6">Le ROI est au cœur de mon approche. Nous le définissons ensemble dès le départ via des indicateurs clairs : l'obtention d'une promotion (et l'augmentation salariale associée), la réussite d'une prise de poste, ou l'amélioration mesurable de votre performance managériale. Au-delà des chiffres, le ROI se mesure aussi en gain de confiance, de clarté et de sérénité dans votre vie professionnelle.</div>
+                                </div>
+                            </div>
+                            <!-- FAQ Item 3 -->
+                            <div class="border border-border rounded-lg px-6" data-state="closed">
+                                <h3 class="flex">
+                                    <button type="button" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]>svg]:rotate-180 text-left text-lg font-semibold text-hero hover:no-underline py-6">
+                                        Vos accompagnements sont-ils confidentiels ?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
+                                    </button>
+                                </h3>
+                                <div class="overflow-hidden text-sm transition-all" hidden>
+                                    <div class="pt-0 text-secondary leading-relaxed pb-6">Absolument. La confidentialité est la pierre angulaire de la confiance et elle est non-négociable. Tous nos échanges sont couverts par le secret professionnel le plus strict. Je m'engage systématiquement par écrit sur ce point dès le début de notre collaboration.</div>
+                                </div>
+                            </div>
+                             <!-- FAQ Item 4 -->
+                            <div class="border border-border rounded-lg px-6" data-state="closed">
+                                <h3 class="flex">
+                                    <button type="button" class="flex flex-1 items-center justify-between transition-all [&amp;[data-state=open]>svg]:rotate-180 text-left text-lg font-semibold text-hero hover:no-underline py-6">
+                                        Travaillez-vous uniquement avec des cadres du secteur de la tech ?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>
+                                    </button>
+                                </h3>
+                                <div class="overflow-hidden text-sm transition-all" hidden>
+                                    <div class="pt-0 text-secondary leading-relaxed pb-6">Bien que mon expérience de DRH soit issue de la tech, ma méthodologie s'applique à tous les cadres et managers de grands groupes ou de PME en croissance, quel que soit leur secteur. Les dynamiques de leadership et de stratégie de carrière sont universelles. L'essentiel est votre ambition et votre engagement dans le processus.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- =================================================================
+            Contact Section
+            ================================================================== -->
+            <section id="contact" class="py-20 section-premium">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-hero">Prêt(e) à devenir l'architecte de votre carrière ?</h2>
+                        <p class="text-xl text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">Le moyen le plus simple de savoir si nous pouvons collaborer est d'en discuter. Réservez ci-dessous un créneau pour un premier échange stratégique. C'est sans engagement, confidentiel, et vous repartirez avec une vision plus claire de vos prochaines étapes.</p>
+                        <div class="bg-card rounded-2xl shadow-large p-8 md:p-12 mb-12">
+                            <div class="flex items-center justify-center gap-3 mb-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-accent"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                                <h3 class="text-2xl font-bold text-hero">Appel Stratégique Carrière (30 min)</h3>
+                            </div>
+                            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                                <div class="flex flex-col items-center text-center">
+                                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-accent"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg></div>
+                                    <p class="text-sm text-secondary">Faire le point sur votre ambition professionnelle principale</p>
+                                </div>
+                                <div class="flex flex-col items-center text-center">
+                                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-accent"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg></div>
+                                    <p class="text-sm text-secondary">Identifier l'obstacle N°1 qui vous freine aujourd'hui</p>
+                                </div>
+                                <div class="flex flex-col items-center text-center">
+                                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-accent"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg></div>
+                                    <p class="text-sm text-secondary">Esquisser les premières pistes de votre plan d'action</p>
+                                </div>
+                            </div>
+                            <div class="bg-accent/5 rounded-xl p-6 mb-8">
+                                <div class="flex items-center gap-2 text-accent mb-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    <span class="font-semibold">À l'issue de cet appel</span>
+                                </div>
+                                <p class="text-secondary">Nous saurons si mon accompagnement est la bonne solution pour vous.</p>
+                            </div>
+                            <div class="bg-muted/30 rounded-xl p-8 mb-8 border-2 border-dashed border-accent/30">
+                                <div class="text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-16 text-accent/50 mx-auto mb-4"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                                    <p class="text-lg font-semibold text-hero mb-2">Widget de Planification Calendly</p>
+                                    <p class="text-sm text-secondary">Emplacement pour l'intégration du calendrier de réservation</p>
+                                </div>
+                            </div>
+                            <a href="#" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md text-lg px-12 py-4">Planifier mon appel stratégique</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- =================================================================
+        Footer
+        ================================================================== -->
+        <footer class="bg-primary text-primary-foreground py-16">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-3 gap-12 mb-12">
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-1">Julien Moreau</h3>
+                                <p class="text-accent font-semibold mb-4">Architecte de Carrière Stratégique</p>
+                                <p class="text-primary-foreground/80 leading-relaxed">Transformer le potentiel des cadres en leadership d'impact.</p>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://linkedin.com/in/julienmoreau-coach" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-smooth">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-6 text-accent">Navigation</h4>
+                            <nav class="space-y-3">
+                                <a href="#about" class="block text-primary-foreground/80 hover:text-accent transition-smooth">Mon Parcours</a>
+                                <a href="#services" class="block text-primary-foreground/80 hover:text-accent transition-smooth">Mes Accompagnements</a>
+                                <a href="#methodology" class="block text-primary-foreground/80 hover:text-accent transition-smooth">Ma Méthodologie</a>
+                                <a href="#testimonials" class="block text-primary-foreground/80 hover:text-accent transition-smooth">Leurs Résultats</a>
+                                <a href="#faq" class="block text-primary-foreground/80 hover:text-accent transition-smooth">FAQ</a>
+                                <a href="#contact" class="block text-primary-foreground/80 hover:text-accent transition-smooth">Planifier un appel</a>
+                            </nav>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-6 text-accent">Contact &amp; Légal</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                    <a href="mailto:contact@julienmoreau-coaching.com" class="text-primary-foreground/80 hover:text-accent transition-smooth">contact@julienmoreau-coaching.com</a>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    <a href="tel:+33612345678" class="text-primary-foreground/80 hover:text-accent transition-smooth">+33 6 12 34 56 78</a>
+                                </div>
+                            </div>
+                            <div class="space-y-2 mt-6 pt-6 border-t border-primary-foreground/20">
+                                <a href="#" class="block text-sm text-primary-foreground/60 hover:text-accent transition-smooth">Mentions Légales</a>
+                                <a href="#" class="block text-sm text-primary-foreground/60 hover:text-accent transition-smooth">Politique de Confidentialité</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p class="text-sm text-primary-foreground/60">© 2025 Julien Moreau. Tous droits réservés.</p>
+                        <p class="text-sm text-accent font-medium">Conçu pour les leaders de demain.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Custom JavaScript for interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Navigation Bar Scroll Effect ---
+            const nav = document.getElementById('main-nav');
+            if (nav) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        nav.classList.add('scrolled');
+                        nav.classList.remove('bg-transparent');
+                    } else {
+                        nav.classList.remove('scrolled');
+                        nav.classList.add('bg-transparent');
+                    }
+                });
+            }
+
+            // --- Smooth Scrolling for Navigation Links ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // --- FAQ Accordion Functionality ---
+            const accordionItems = document.querySelectorAll('#faq [data-state]');
+            accordionItems.forEach(item => {
+                const trigger = item.querySelector('button');
+                const content = item.querySelector('div.overflow-hidden');
+
+                if (trigger && content) {
+                    trigger.addEventListener('click', () => {
+                        const isExpanded = item.getAttribute('data-state') === 'open';
+
+                        // Close all items
+                        accordionItems.forEach(i => {
+                            i.setAttribute('data-state', 'closed');
+                            const c = i.querySelector('div.overflow-hidden');
+                            if(c) {
+                                c.setAttribute('hidden', '');
+                                c.style.maxHeight = null;
+                            }
+                        });
+
+                        // Toggle the clicked item
+                        if (!isExpanded) {
+                            item.setAttribute('data-state', 'open');
+                            content.removeAttribute('hidden');
+                             // Set max-height for transition
+                            content.style.maxHeight = content.scrollHeight + "px";
+                        }
+                    });
+
+                    // Set initial max-height for open items for animation
+                    if (item.getAttribute('data-state') === 'open') {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
