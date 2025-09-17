@@ -13,12 +13,12 @@
     <meta property="og:description" content="Coaching de carrière stratégique pour cadres et managers ambitieux. Passez de manager performant à leader indispensable.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://julienmoreau-coaching.com">
-    <meta property="og:image" content="https://julienmoreau-coaching.com/og-image.jpg">
+    <meta property="og:image" content="https://julienmoreau-coaching.com/images/apercu-partage-social.webp">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Julien Moreau - Coach de Carrière Stratégique">
     <meta name="twitter:description" content="Transformez votre expertise en leadership. Coaching stratégique pour managers ambitieux.">
-    <meta name="twitter:image" content="https://julienmoreau-coaching.com/og-image.jpg">
+    <meta name="twitter:image" content="https://julienmoreau-coaching.com/images/apercu-partage-social.webp">
     
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -91,7 +91,11 @@
     <style>
         .hero-gradient {
             background-color: #11192c;
-            background-image: radial-gradient(circle at 50% 100%, rgba(255, 193, 5, 0.08), transparent 40%);
+            /* MODIFICATION : Ajout de l'image de fond derrière le dégradé */
+            background-image: url('images/hero-background.webp'), radial-gradient(circle at 50% 100%, rgba(255, 193, 5, 0.08), transparent 40%);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .section-premium {
             background-color: #f9fafb;
@@ -204,7 +208,8 @@
                             </div>
                             <div class="flex justify-center">
                                 <div class="relative">
-                                    <img src="https://placehold.co/448x576/1d232f/fafafa?text=Julien+Moreau" alt="Julien Moreau, Coach de carrière stratégique" class="rounded-2xl shadow-large w-full max-w-md object-cover">
+                                    <!-- MODIFICATION : Remplacement de l'image placeholder -->
+                                    <img src="images/portrait-julien-moreau.webp" alt="Julien Moreau, Coach de carrière stratégique" class="rounded-2xl shadow-large w-full max-w-md object-cover">
                                     <div class="absolute -bottom-6 -right-6 w-24 h-24 success-gradient rounded-full opacity-20"></div>
                                 </div>
                             </div>
@@ -310,7 +315,10 @@
                                     <p class="text-lg leading-relaxed text-secondary">Notre collaboration débute par une phase d'écoute approfondie pour comprendre vos ambitions, votre contexte et vos défis. Nous réalisons un diagnostic complet de votre situation pour établir des fondations solides et définir des objectifs mesurables.</p>
                                 </div>
                                 <div class="flex justify-center">
-                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-32 h-32 text-accent/30"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></div>
+                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft">
+                                        <!-- MODIFICATION : Remplacement de l'icône SVG par une image -->
+                                        <img src="images/icone-methodologie-diagnostic.webp" alt="Icône de diagnostic et alignement" class="w-32 h-32">
+                                    </div>
                                 </div>
                             </div>
                             <!-- Step 2 -->
@@ -324,7 +332,10 @@
                                     <p class="text-lg leading-relaxed text-secondary">Sur la base du diagnostic, nous co-construisons votre plan de carrière personnalisé. C'est une feuille de route claire, qui détaille les actions à mener, les compétences à développer et les jalons à atteindre pour sécuriser votre prochain poste.</p>
                                 </div>
                                 <div class="lg:col-start-1 lg:row-start-1 flex justify-center">
-                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-32 h-32 text-accent/30"><circle cx="6" cy="19" r="3"></circle><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path><circle cx="18" cy="5" r="3"></circle></svg></div>
+                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft">
+                                        <!-- MODIFICATION : Remplacement de l'icône SVG par une image -->
+                                        <img src="images/icone-methodologie-strategie.webp" alt="Icône de stratégie et feuille de route" class="w-32 h-32">
+                                    </div>
                                 </div>
                             </div>
                             <!-- Step 3 -->
@@ -338,7 +349,10 @@
                                     <p class="text-lg leading-relaxed text-secondary">C'est la phase de mise en œuvre. À travers nos sessions, nous travaillons activement à l'exécution du plan. Je vous challenge, je vous fournis les outils et nous nous entraînons en conditions réelles (simulations d'entretiens, prises de parole) pour vous préparer au succès.</p>
                                 </div>
                                 <div class="flex justify-center">
-                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-32 h-32 text-accent/30"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div>
+                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft">
+                                        <!-- MODIFICATION : Remplacement de l'icône SVG par une image -->
+                                        <img src="images/icone-methodologie-action.webp" alt="Icône d'action et entraînement" class="w-32 h-32">
+                                    </div>
                                 </div>
                             </div>
                             <!-- Step 4 -->
@@ -352,7 +366,10 @@
                                     <p class="text-lg leading-relaxed text-secondary">Nous suivons vos progrès par rapport aux objectifs fixés. L'objectif final est de vous rendre totalement autonome, en ancrant durablement les nouvelles compétences et postures qui feront de vous un leader reconnu et respecté.</p>
                                 </div>
                                 <div class="lg:col-start-1 lg:row-start-1 flex justify-center">
-                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-32 h-32 text-accent/30"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+                                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center shadow-soft">
+                                        <!-- MODIFICATION : Remplacement de l'icône SVG par une image -->
+                                        <img src="images/icone-methodologie-mesure.webp" alt="Icône de mesure et ancrage" class="w-32 h-32">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -376,7 +393,8 @@
                                     <div class="flex flex-col h-full">
                                         <blockquote class="text-lg leading-relaxed text-secondary mb-8 flex-grow">"Avant de travailler avec Julien, j'étais un 'expert technique' coincé dans un rôle de manager senior. Je ne comprenais pas pourquoi ma carrière n'avançait pas malgré mes résultats. L'approche de Julien a été un électrochoc salutaire. Il m'a aidé à décoder la culture de mon entreprise et à transformer ma communication. Résultat : 6 mois plus tard, j'ai été promu Directeur de l'Ingénierie. C'est le meilleur investissement que j'ai fait sur moi-même."</blockquote>
                                         <div class="flex items-center gap-4 pt-6 border-t">
-                                            <img src="https://placehold.co/64x64/cccccc/333333?text=DL" alt="David L." class="w-16 h-16 rounded-full object-cover shadow-soft">
+                                            <!-- MODIFICATION : Remplacement de l'image placeholder -->
+                                            <img src="images/testimonial-david-l.webp" alt="David L." class="w-16 h-16 rounded-full object-cover shadow-soft">
                                             <div>
                                                 <p class="font-semibold text-hero">David L.</p>
                                                 <p class="text-sm text-secondary">Directeur de l'Ingénierie, TechSolutions Inc.</p>
@@ -391,7 +409,8 @@
                                     <div class="flex flex-col h-full">
                                         <blockquote class="text-lg leading-relaxed text-secondary mb-8 flex-grow">"Je préparais une transition vers un poste de direction dans une nouvelle entreprise et le syndrome de l'imposteur me paralysait. Julien m'a fourni une méthode et des outils concrets pour structurer ma pensée, affirmer mon leadership et réussir ma prise de poste. Sa connaissance du monde corporate est un atout inestimable. Je me sens aujourd'hui légitime et parfaitement à ma place."</blockquote>
                                         <div class="flex items-center gap-4 pt-6 border-t">
-                                            <img src="https://placehold.co/64x64/cccccc/333333?text=SD" alt="Sophie Dubois" class="w-16 h-16 rounded-full object-cover shadow-soft">
+                                            <!-- MODIFICATION : Remplacement de l'image placeholder -->
+                                            <img src="images/testimonial-sophie-dubois.webp" alt="Sophie Dubois" class="w-16 h-16 rounded-full object-cover shadow-soft">
                                             <div>
                                                 <p class="font-semibold text-hero">Sophie Dubois</p>
                                                 <p class="text-sm text-secondary">VP Sales, Innovate Corp.</p>
