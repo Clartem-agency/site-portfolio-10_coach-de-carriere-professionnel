@@ -220,7 +220,7 @@
                 </div>
             </section>
             
-            <!-- =================================================================
+                        <!-- =================================================================
             Services Section
             ================================================================== -->
             <section id="services" class="py-20 section-premium">
@@ -232,13 +232,15 @@
                         </div>
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                             <!-- Service Card 1 -->
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-smooth hover:shadow-medium ring-2 ring-accent shadow-accent">
+                            <!-- MODIFICATION : Ajout de 'flex flex-col' pour que la carte se comporte comme un conteneur flex vertical -->
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-smooth hover:shadow-medium ring-2 ring-accent shadow-accent flex flex-col">
                                 <div class="flex flex-col space-y-1.5 p-6">
                                     <h3 class="tracking-tight text-xl font-bold text-hero">Programme "Trajectoire Leader"</h3>
                                     <p class="text-sm font-medium text-accent">Pour les managers confirmés visant un poste de Direction (Directeur, VP).</p>
                                     <p class="text-primary mt-4">Un accompagnement intensif sur 3 à 6 mois pour construire et exécuter votre plan de carrière. Nous transformons votre expertise en leadership, votre potentiel en promotion.</p>
                                 </div>
-                                <div class="p-6 pt-0 space-y-6">
+                                <!-- MODIFICATION : Ajout de 'flex flex-col flex-grow' pour que cette section remplisse l'espace disponible -->
+                                <div class="p-6 pt-0 flex flex-col flex-grow">
                                     <div class="space-y-3">
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Diagnostic 360° de votre profil de leader</span></div>
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Définition de votre marque personnelle et de votre proposition de valeur unique</span></div>
@@ -246,45 +248,52 @@
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Coaching sur la communication d'influence et la présence exécutive</span></div>
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Préparation intensive aux entretiens de haut niveau</span></div>
                                     </div>
-                                    <div class="border-t pt-6">
+                                    <!-- MODIFICATION : Ajout de 'mt-auto' pour pousser cette section en bas de la carte -->
+                                    <div class="border-t pt-6 mt-auto">
                                         <p class="font-semibold text-hero mb-4">Accompagnement sur 3 à 6 mois – Sur devis</p>
                                         <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full">En savoir plus sur ce programme</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- Service Card 2 -->
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-smooth hover:shadow-medium">
+                            <!-- MODIFICATION : Ajout de 'flex flex-col' -->
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-smooth hover:shadow-medium flex flex-col">
                                 <div class="flex flex-col space-y-1.5 p-6">
                                     <h3 class="tracking-tight text-xl font-bold text-hero">Session "Clarté Carrière"</h3>
                                     <p class="text-sm font-medium text-accent">Pour les professionnels faisant face à un défi ponctuel (négociation, prise de poste, conflit).</p>
                                     <p class="text-secondary mt-4">Une session "deep dive" de 2 heures pour débloquer une situation complexe, analyser vos options et repartir avec un plan d'action immédiat.</p>
                                 </div>
-                                <div class="p-6 pt-0 space-y-6">
+                                <!-- MODIFICATION : Ajout de 'flex flex-col flex-grow' -->
+                                <div class="p-6 pt-0 flex flex-col flex-grow">
                                     <div class="space-y-3">
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Analyse de votre problématique en amont</span></div>
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Session de travail intensive de 2h</span></div>
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Synthèse et plan d'action détaillé post-session</span></div>
                                     </div>
-                                    <div class="border-t pt-6">
+                                    <!-- MODIFICATION : Ajout de 'mt-auto' -->
+                                    <div class="border-t pt-6 mt-auto">
                                         <p class="font-semibold text-hero mb-4">Session unique de 2h – 650€</p>
                                         <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">Réserver ma session Clarté</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- Service Card 3 -->
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-smooth hover:shadow-medium">
+                            <!-- MODIFICATION : Ajout de 'flex flex-col' -->
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-smooth hover:shadow-medium flex flex-col">
                                 <div class="flex flex-col space-y-1.5 p-6">
                                     <h3 class="tracking-tight text-xl font-bold text-hero">Atelier "Corporate Leadership"</h3>
                                     <p class="text-sm font-medium text-accent">Pour les entreprises souhaitant accélérer le développement de leurs hauts potentiels.</p>
                                     <p class="text-secondary mt-4">Un programme sur-mesure pour vos équipes de managers. Nous développons les compétences de leadership qui feront la différence pour la performance de votre entreprise.</p>
                                 </div>
-                                <div class="p-6 pt-0 space-y-6">
+                                <!-- MODIFICATION : Ajout de 'flex flex-col flex-grow' -->
+                                <div class="p-6 pt-0 flex flex-col flex-grow">
                                     <div class="space-y-3">
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Ateliers collectifs sur mesure (présence exécutive, management stratégique)</span></div>
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Sessions de coaching individuel pour les participants</span></div>
                                         <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg><span class="text-sm text-secondary">Reporting et suivi avec le management</span></div>
                                     </div>
-                                    <div class="border-t pt-6">
+                                    <!-- MODIFICATION : Ajout de 'mt-auto' -->
+                                    <div class="border-t pt-6 mt-auto">
                                         <p class="font-semibold text-hero mb-4">Pour équipes de 5 à 10 personnes – Sur devis</p>
                                         <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">Demander une proposition</a>
                                     </div>
@@ -294,6 +303,8 @@
                     </div>
                 </div>
             </section>
+
+            
             
                        <!-- =================================================================
             Methodology Section
