@@ -23,6 +23,9 @@
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- ScrollReveal.js via CDN (AJOUTÉ) -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- Tailwind CSS Configuration -->
     <script>
     tailwind.config = {
@@ -91,7 +94,6 @@
     <style>
         .hero-gradient {
             background-color: #11192c;
-            /* MODIFICATION : Ajout de l'image de fond derrière le dégradé */
             background-image: url('images/hero-background.webp'), radial-gradient(circle at 50% 100%, rgba(255, 193, 5, 0.08), transparent 40%);
             background-size: cover;
             background-position: center;
@@ -208,8 +210,8 @@
                             </div>
                             <div class="flex justify-center">
                                 <div class="relative">
-                                    <!-- MODIFICATION : Remplacement de l'image placeholder -->
-                                    <img src="images/portrait-julien-moreau.webp" alt="Julien Moreau, Coach de carrière stratégique" class="rounded-2xl shadow-large w-full max-w-md object-cover">
+                                    <!-- MODIFICATION : Ajout de loading="lazy" -->
+                                    <img loading="lazy" src="images/portrait-julien-moreau.webp" alt="Julien Moreau, Coach de carrière stratégique" class="rounded-2xl shadow-large w-full max-w-md object-cover">
                                     <div class="absolute -bottom-6 -right-6 w-24 h-24 success-gradient rounded-full opacity-20"></div>
                                 </div>
                             </div>
@@ -316,8 +318,8 @@
                                 </div>
                                 <div class="flex justify-center">
                                     <div class="w-80 h-80 rounded-2xl shadow-soft">
-                                        <!-- MODIFICATION : L'image remplit maintenant le cadre -->
-                                        <img src="images/icone-methodologie-diagnostic.webp" alt="Icône de diagnostic et alignement" class="w-full h-full object-cover rounded-2xl">
+                                        <!-- MODIFICATION : Ajout de loading="lazy" -->
+                                        <img loading="lazy" src="images/icone-methodologie-diagnostic.webp" alt="Icône de diagnostic et alignement" class="w-full h-full object-cover rounded-2xl">
                                     </div>
                                 </div>
                             </div>
@@ -333,8 +335,8 @@
                                 </div>
                                 <div class="lg:col-start-1 lg:row-start-1 flex justify-center">
                                     <div class="w-80 h-80 rounded-2xl shadow-soft">
-                                        <!-- MODIFICATION : L'image remplit maintenant le cadre -->
-                                        <img src="images/icone-methodologie-strategie.webp" alt="Icône de stratégie et feuille de route" class="w-full h-full object-cover rounded-2xl">
+                                        <!-- MODIFICATION : Ajout de loading="lazy" -->
+                                        <img loading="lazy" src="images/icone-methodologie-strategie.webp" alt="Icône de stratégie et feuille de route" class="w-full h-full object-cover rounded-2xl">
                                     </div>
                                 </div>
                             </div>
@@ -350,8 +352,8 @@
                                 </div>
                                 <div class="flex justify-center">
                                     <div class="w-80 h-80 rounded-2xl shadow-soft">
-                                        <!-- MODIFICATION : L'image remplit maintenant le cadre -->
-                                        <img src="images/icone-methodologie-action.webp" alt="Icône d'action et entraînement" class="w-full h-full object-cover rounded-2xl">
+                                        <!-- MODIFICATION : Ajout de loading="lazy" -->
+                                        <img loading="lazy" src="images/icone-methodologie-action.webp" alt="Icône d'action et entraînement" class="w-full h-full object-cover rounded-2xl">
                                     </div>
                                 </div>
                             </div>
@@ -367,8 +369,8 @@
                                 </div>
                                 <div class="lg:col-start-1 lg:row-start-1 flex justify-center">
                                     <div class="w-80 h-80 rounded-2xl shadow-soft">
-                                        <!-- MODIFICATION : L'image remplit maintenant le cadre -->
-                                        <img src="images/icone-methodologie-mesure.webp" alt="Icône de mesure et ancrage" class="w-full h-full object-cover rounded-2xl">
+                                        <!-- MODIFICATION : Ajout de loading="lazy" -->
+                                        <img loading="lazy" src="images/icone-methodologie-mesure.webp" alt="Icône de mesure et ancrage" class="w-full h-full object-cover rounded-2xl">
                                     </div>
                                 </div>
                             </div>
@@ -393,8 +395,8 @@
                                     <div class="flex flex-col h-full">
                                         <blockquote class="text-lg leading-relaxed text-secondary mb-8 flex-grow">"Avant de travailler avec Julien, j'étais un 'expert technique' coincé dans un rôle de manager senior. Je ne comprenais pas pourquoi ma carrière n'avançait pas malgré mes résultats. L'approche de Julien a été un électrochoc salutaire. Il m'a aidé à décoder la culture de mon entreprise et à transformer ma communication. Résultat : 6 mois plus tard, j'ai été promu Directeur de l'Ingénierie. C'est le meilleur investissement que j'ai fait sur moi-même."</blockquote>
                                         <div class="flex items-center gap-4 pt-6 border-t">
-                                            <!-- MODIFICATION : Remplacement de l'image placeholder -->
-                                            <img src="images/testimonial-david-l.webp" alt="David L." class="w-16 h-16 rounded-full object-cover shadow-soft">
+                                            <!-- MODIFICATION : Ajout de loading="lazy" -->
+                                            <img loading="lazy" src="images/testimonial-david-l.webp" alt="David L." class="w-16 h-16 rounded-full object-cover shadow-soft">
                                             <div>
                                                 <p class="font-semibold text-hero">David L.</p>
                                                 <p class="text-sm text-secondary">Directeur de l'Ingénierie, TechSolutions Inc.</p>
@@ -409,8 +411,8 @@
                                     <div class="flex flex-col h-full">
                                         <blockquote class="text-lg leading-relaxed text-secondary mb-8 flex-grow">"Je préparais une transition vers un poste de direction dans une nouvelle entreprise et le syndrome de l'imposteur me paralysait. Julien m'a fourni une méthode et des outils concrets pour structurer ma pensée, affirmer mon leadership et réussir ma prise de poste. Sa connaissance du monde corporate est un atout inestimable. Je me sens aujourd'hui légitime et parfaitement à ma place."</blockquote>
                                         <div class="flex items-center gap-4 pt-6 border-t">
-                                            <!-- MODIFICATION : Remplacement de l'image placeholder -->
-                                            <img src="images/testimonial-sophie-dubois.webp" alt="Sophie Dubois" class="w-16 h-16 rounded-full object-cover shadow-soft">
+                                            <!-- MODIFICATION : Ajout de loading="lazy" -->
+                                            <img loading="lazy" src="images/testimonial-sophie-dubois.webp" alt="Sophie Dubois" class="w-16 h-16 rounded-full object-cover shadow-soft">
                                             <div>
                                                 <p class="font-semibold text-hero">Sophie Dubois</p>
                                                 <p class="text-sm text-secondary">VP Sales, Innovate Corp.</p>
@@ -508,7 +510,8 @@
                             <div class="grid lg:grid-cols-2">
                                 <!-- Left Panel: Information -->
                                 <div class="p-6 md:p-8 border-b lg:border-b-0 lg:border-r border-border">
-                                    <img src="images/portrait-julien-moreau.webp" alt="Portrait de Julien Moreau" class="w-16 h-16 rounded-full mb-4 object-cover">
+                                    <!-- MODIFICATION : Ajout de loading="lazy" -->
+                                    <img loading="lazy" src="images/portrait-julien-moreau.webp" alt="Portrait de Julien Moreau" class="w-16 h-16 rounded-full mb-4 object-cover">
                                     <p class="text-secondary font-medium">Julien Moreau</p>
                                     <h3 class="text-2xl font-bold text-hero mt-1 mb-3">Appel Stratégique Carrière (30 min)</h3>
                                     
@@ -683,6 +686,7 @@
             }
 
             // --- Smooth Scrolling for Navigation Links ---
+            // (Votre implémentation existante est conservée car elle est excellente)
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -731,6 +735,30 @@
                     }
                 }
             });
+
+            // --- NOUVELLE FONCTIONNALITÉ : Scroll Reveal (pour écrans larges uniquement) ---
+            if (window.matchMedia("(min-width: 1024px)").matches) {
+                const sr = ScrollReveal({
+                    origin: 'bottom',
+                    distance: '40px',
+                    duration: 800,
+                    delay: 200,
+                    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+                    reset: false // Les animations ne se répètent pas
+                });
+
+                // Animations générales
+                sr.reveal('h1, #hero p, #hero .flex');
+                sr.reveal('h2, h3');
+
+                // Animations spécifiques par section avec effet de cascade
+                sr.reveal('#about .grid > div', { interval: 200 });
+                sr.reveal('#services .grid > div', { interval: 150 });
+                sr.reveal('#methodology .grid', { interval: 200 });
+                sr.reveal('#testimonials .grid > div', { interval: 150 });
+                sr.reveal('#faq .space-y-4 > div', { interval: 100 });
+                sr.reveal('#contact .bg-card');
+            }
         });
     </script>
 </body>
